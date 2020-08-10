@@ -30,6 +30,42 @@
 				<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
 				<animation effect="fade" start="100" end="50" time="0" condition="Visualisation.Enabled">Conditional</animation>
 				<texture background="true">$INFO[Window(Visualisation).Property(ArtistSlideshow.Image)]</texture>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.Image)) + !Skin.HasSetting(keep_artist_artwork_scale)</visible>
+			</control>
+			<control type="image">
+				<aspectratio>keep</aspectratio>
+				<fadetime>400</fadetime>
+				<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
+				<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
+				<animation effect="fade" start="100" end="50" time="0" condition="Visualisation.Enabled">Conditional</animation>
+				<texture background="true">$INFO[Window(Visualisation).Property(ArtistSlideshow.Image)]</texture>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.Image)) + Skin.HasSetting(keep_artist_artwork_scale)</visible>
+			</control>
+		</control>
+		<control type="group">
+			<visible>Skin.HasSetting(show_artist_bio)</visible>
+			<visible>[Player.ShowInfo | Window.IsActive(musicosd)] + ![Window.IsActive(playerprocessinfo) | MusicPlayer.Content(livetv)]</visible>
+			<include>Visible_Left</include>
+			<control type="image">
+				<top>125</top>
+				<right>0</right>
+				<width>1025</width>
+				<height>475</height>
+				<texture colordiffuse="80FFFFFF">dialogs/dialog-bg-nobo.png</texture>
+			</control>
+			<control type="textbox" id="1012">
+				<top>132</top>
+				<right>50</right>
+				<width>50%</width>
+				<height>450</height>
+				<description>Artist Biography from Artist Slideshow</description>
+				<align>right</align>
+				<aligny>top</aligny>
+				<font>font13</font>
+				<scroll>true</scroll>
+				<wrapmultiline>true</wrapmultiline>
+				<autoscroll time="2000" delay="10000" repeat="5000"></autoscroll>
+				<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.ArtistBiography)]</label>
 			</control>
 		</control>
 		<control type="group">

@@ -774,3 +774,99 @@ msgstr ""
 msgctxt "#31167"
 msgid "Animate background"
 msgstr ""
+
+#empty strings from id 31168 to 31499
+
+#: /xml/SkinSettings.xml
+msgctxt "#31500"
+msgid "Show music visualisation screen directly when playing song"
+msgstr ""
+
+#empty string id 31501
+
+#: /xml/SkinSettings.xml
+msgctxt "#31502"
+msgid "Show artist bio with Music OSD"
+msgstr ""
+
+#: /xml/SkinSettings.xml
+msgctxt "#31503"
+msgid "Menu item actions"
+msgstr ""
+
+#: /xml/SkinSettings.xml
+msgctxt "#31504"
+msgid "Select menu item to display"
+msgstr ""
+
+#: /xml/SkinSettings.xml
+msgctxt "#31505"
+msgid "Background diffusion"
+msgstr ""
+
+#empty strings from id 31506 to 31509
+
+#: /xml/SkinSettings.xml
+msgctxt "#31510"
+msgid "Unwatched TV Shows/In progress TV shows"
+msgstr ""
+
+#: /xml/SkinSettings.xml
+msgctxt "#31511"
+msgid "In music visualization do not scale background artist images"
+msgstr ""
+
+#: /xml/SkinSettings.xml
+msgctxt "#31512"
+msgid "100%"
+msgstr ""
+
+#: /xml/SkinSettings.xml
+msgctxt "#31513"
+msgid "10%"
+msgstr ""
+
+#: /xml/SkinSettings.xml
+msgctxt "#31514"
+msgid "20%"
+msgstr ""
+
+#: /xml/SkinSettings.xml
+msgctxt "#31515"
+msgid "30%"
+msgstr ""
+
+#: /xml/SkinSettings.xml
+msgctxt "#31516"
+msgid "40%"
+msgstr ""
+
+#: /xml/SkinSettings.xml
+msgctxt "#31517"
+msgid "50%"
+msgstr ""
+
+#: /xml/SkinSettings.xml
+msgctxt "#31518"
+msgid "60%"
+msgstr ""
+
+#: /xml/SkinSettings.xml
+msgctxt "#31519"
+msgid "70%"
+msgstr ""
+
+#: /xml/SkinSettings.xml
+msgctxt "#31520"
+msgid "80%"
+msgstr ""
+
+#: /xml/SkinSettings.xml
+msgctxt "#31521"
+msgid "90%"
+msgstr ""
+
+#: /xml/SkinSettings.xml
+msgctxt "#31522"
+msgid "Choose weather icon pack"
+msgstr ""
