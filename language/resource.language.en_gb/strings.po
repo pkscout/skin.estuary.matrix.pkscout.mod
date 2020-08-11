@@ -775,14 +775,7 @@ msgctxt "#31167"
 msgid "Animate background"
 msgstr ""
 
-#empty strings from id 31168 to 31499
-
-#: /xml/SkinSettings.xml
-msgctxt "#31500"
-msgid "Show music visualisation screen directly when playing song"
-msgstr ""
-
-#empty string id 31501
+#empty strings from id 31168 to 31501
 
 #: /xml/SkinSettings.xml
 msgctxt "#31502"

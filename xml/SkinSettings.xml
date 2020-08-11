@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-	<include condition="!String.IsEqual(Skin.String(skin_version),1.0.0)">LoadDefaultConfig</include>
+	<include condition="!String.IsEqual(Skin.String(skin_version),1.0.1)">LoadDefaultConfig</include>
 	<defaultcontrol>9000</defaultcontrol>
 	<backgroundcolor>background</backgroundcolor>
 	<onload condition="String.IsEmpty(Skin.String(background_overlay))">Skin.SetString(background_overlay,1)</onload>
@@ -656,24 +656,18 @@
 					<selected>!Skin.HasSetting(no_fanart)</selected>
 				</control>
 				<control type="radiobutton" id="606">
-					<label>$LOCALIZE[31500]</label>
-					<include>DefaultSettingButton</include>
-					<onclick>Skin.ToggleSetting(show_musicvisualization)</onclick>
-					<selected>Skin.HasSetting(show_musicvisualization)</selected>
-				</control>
-				<control type="radiobutton" id="607">
 					<label>$LOCALIZE[31511]</label>
 					<include>DefaultSettingButton</include>
 					<onclick>Skin.ToggleSetting(keep_artist_artwork_scale)</onclick>
 					<selected>Skin.HasSetting(keep_artist_artwork_scale)</selected>
 				</control>
-				<control type="button" id="608">
+				<control type="button" id="607">
 					<label>$LOCALIZE[31505]</label>
 					<include>DefaultSettingButton</include>
 					<onclick>Skin.SelectBool(31505, 31512|bgd_show_100, 31521|bgd_show_90, 31520|bgd_show_80, 13278|bgd_show_default, 31519|bgd_show_70, 31518|bgd_show_60, 31517|bgd_show_50, 31516|bgd_show_40, 31515|bgd_show_30, 31514|bgd_show_20, 31513|bgd_show_10, 16018|bgd_show_0)</onclick>
 					<label2>$VAR[BackgroundDiffusionPercentLabel2Var]</label2>
 				</control>
-				<control type="button" id="609">
+				<control type="button" id="608">
 					<label>$LOCALIZE[31156]</label>
 					<label2>$VAR[BackgroundOverlayTypeVar]</label2>
 					<include>DefaultSettingButton</include>
@@ -686,7 +680,7 @@
 					<onclick condition="String.IsEqual(Skin.String(background_overlay),1)">Skin.SetString(background_overlay,2)</onclick>
 					<onclick condition="String.IsEqual(Skin.String(background_overlay),0)">Skin.SetString(background_overlay,1)</onclick>
 				</control>
-				<control type="button" id="610">
+				<control type="button" id="609">
 					<label>$LOCALIZE[31131]</label>
 					<label2>$INFO[Skin.String(HomeFanart.name)]</label2>
 					<include>DefaultSettingButton</include>
@@ -694,7 +688,7 @@
 					<onclick condition="!System.HasAddon(script.image.resource.select)">InstallAddon(script.image.resource.select)</onclick>
 					<enable>!Skin.HasSetting(no_fanart)</enable>
 				</control>
-				<control type="button" id="611">
+				<control type="button" id="610">
 					<label>$LOCALIZE[31062]</label>
 					<label2>$INFO[Skin.String(WeatherFanart.name)]</label2>
 					<include>DefaultSettingButton</include>
