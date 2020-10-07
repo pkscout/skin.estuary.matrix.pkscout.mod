@@ -188,7 +188,10 @@ msgctxt "#31033"
 msgid "Your rating"
 msgstr ""
 
-#empty string with id 31034
+#: /xml/DialogVideoInfo.xml
+msgctxt "#31034"
+msgid "Extended info"
+msgstr ""
 
 #: /xml/DialogPVRChannelManager.xml /xml/DialogPVRChannelsOSD.xml /xml/DialogPVRGuideOSD.xml /xml/Variables.xml /xml/FileBrowser.xml
 msgctxt "#31035"
@@ -611,7 +614,10 @@ msgctxt "#31134"
 msgid "Remaining"
 msgstr ""
 
-#empty string with id 31135
+#: /xml/DialogAddonInfo.xml
+msgctxt "#31135"
+msgid "Binary"
+msgstr ""
 
 #: /xml/DialogAddonInfo.xml
 msgctxt "#31136"
@@ -683,7 +689,7 @@ msgstr ""
 
 #: /xml/DialogAddonInfo.xml
 msgctxt "#31150"
-msgid "Repository"
+msgid "Origin"
 msgstr ""
 
 #: /xml/Home.xml

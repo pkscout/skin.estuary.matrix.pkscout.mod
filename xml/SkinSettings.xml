@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-	<include condition="!String.IsEqual(Skin.String(skin_version),1.0.1)">LoadDefaultConfig</include>
 	<defaultcontrol>9000</defaultcontrol>
 	<backgroundcolor>background</backgroundcolor>
 	<onload condition="String.IsEmpty(Skin.String(background_overlay))">Skin.SetString(background_overlay,1)</onload>
@@ -260,7 +259,8 @@
 				<control type="button" id="8017">
 					<label>-- $LOCALIZE[31157]</label>
 					<include>DefaultSettingButton</include>
-					<onclick condition="System.HasAddon(plugin.library.node.editor)">ActivateWindow(programs,plugin://plugin.library.node.editor/?ltype=video,return)</onclick>
+					<onclick condition="System.AddonIsEnabled(plugin.library.node.editor)">ActivateWindow(programs,plugin://plugin.library.node.editor/?ltype=video,return)</onclick>
+					<onclick condition="System.HasAddon(plugin.library.node.editor) + !System.AddonIsEnabled(plugin.library.node.editor)">EnableAddon(plugin.library.node.editor)</onclick>
 					<onclick condition="!System.HasAddon(plugin.library.node.editor)">InstallAddon(plugin.library.node.editor)</onclick>
 					<visible>Skin.HasSetting(slot1_show_movies) | Skin.HasSetting(slot2_show_movies) | Skin.HasSetting(slot3_show_movies) | Skin.HasSetting(slot4_show_movies) | Skin.HasSetting(slot5_show_movies) | Skin.HasSetting(slot6_show_movies) | Skin.HasSetting(slot7_show_movies) | Skin.HasSetting(slot8_show_movies) | Skin.HasSetting(slot9_show_movies) | Skin.HasSetting(slot10_show_movies) | Skin.HasSetting(slot11_show_movies) | Skin.HasSetting(slot12_show_movies)</visible>
 				</control>
@@ -321,7 +321,8 @@
 				<control type="button" id="8027">
 					<label>-- $LOCALIZE[31157]</label>
 					<include>DefaultSettingButton</include>
-					<onclick condition="System.HasAddon(plugin.library.node.editor)">ActivateWindow(programs,plugin://plugin.library.node.editor/?ltype=video,return)</onclick>
+					<onclick condition="System.AddonIsEnabled(plugin.library.node.editor)">ActivateWindow(programs,plugin://plugin.library.node.editor/?ltype=video,return)</onclick>
+					<onclick condition="System.HasAddon(plugin.library.node.editor) + !System.AddonIsEnabled(plugin.library.node.editor)">EnableAddon(plugin.library.node.editor)</onclick>
 					<onclick condition="!System.HasAddon(plugin.library.node.editor)">InstallAddon(plugin.library.node.editor)</onclick>
 					<visible>Skin.HasSetting(slot1_show_tvshows) | Skin.HasSetting(slot2_show_tvshows) | Skin.HasSetting(slot3_show_tvshows) | Skin.HasSetting(slot4_show_tvshows) | Skin.HasSetting(slot5_show_tvshows) | Skin.HasSetting(slot6_show_tvshows) | Skin.HasSetting(slot7_show_tvshows) | Skin.HasSetting(slot8_show_tvshows) | Skin.HasSetting(slot9_show_tvshows) | Skin.HasSetting(slot10_show_tvshows) | Skin.HasSetting(slot11_show_tvshows) | Skin.HasSetting(slot12_show_tvshows)</visible>
 				</control>
@@ -375,7 +376,8 @@
 				<control type="button" id="8037">
 					<label>-- $LOCALIZE[31157]</label>
 					<include>DefaultSettingButton</include>
-					<onclick condition="System.HasAddon(plugin.library.node.editor)">ActivateWindow(programs,plugin://plugin.library.node.editor/?ltype=music,return)</onclick>
+					<onclick condition="System.AddonIsEnabled(plugin.library.node.editor)">ActivateWindow(programs,plugin://plugin.library.node.editor/?ltype=music,return)</onclick>
+					<onclick condition="System.HasAddon(plugin.library.node.editor) + !System.AddonIsEnabled(plugin.library.node.editor)">EnableAddon(plugin.library.node.editor)</onclick>
 					<onclick condition="!System.HasAddon(plugin.library.node.editor)">InstallAddon(plugin.library.node.editor)</onclick>
 					<visible>Skin.HasSetting(slot1_show_music) | Skin.HasSetting(slot2_show_music) | Skin.HasSetting(slot3_show_music) | Skin.HasSetting(slot4_show_music) | Skin.HasSetting(slot5_show_music) | Skin.HasSetting(slot6_show_music) | Skin.HasSetting(slot7_show_music) | Skin.HasSetting(slot8_show_music) | Skin.HasSetting(slot9_show_music) | Skin.HasSetting(slot10_show_music) | Skin.HasSetting(slot11_show_music) | Skin.HasSetting(slot12_show_music)</visible>
 				</control>
@@ -684,7 +686,8 @@
 					<label>$LOCALIZE[31131]</label>
 					<label2>$INFO[Skin.String(HomeFanart.name)]</label2>
 					<include>DefaultSettingButton</include>
-					<onclick condition="System.HasAddon(script.image.resource.select)">RunScript(script.image.resource.select,property=HomeFanart&amp;type=resource.images.skinbackgrounds)</onclick>
+					<onclick condition="System.AddonIsEnabled(script.image.resource.select)">RunScript(script.image.resource.select,property=HomeFanart&amp;type=resource.images.skinbackgrounds)</onclick>
+					<onclick condition="System.HasAddon(script.image.resource.select) + !System.AddonIsEnabled(script.image.resource.select)">EnableAddon(script.image.resource.select)</onclick>
 					<onclick condition="!System.HasAddon(script.image.resource.select)">InstallAddon(script.image.resource.select)</onclick>
 					<enable>!Skin.HasSetting(no_fanart)</enable>
 				</control>
@@ -692,7 +695,8 @@
 					<label>$LOCALIZE[31062]</label>
 					<label2>$INFO[Skin.String(WeatherFanart.name)]</label2>
 					<include>DefaultSettingButton</include>
-					<onclick condition="System.HasAddon(script.image.resource.select)">RunScript(script.image.resource.select,property=WeatherFanart&amp;type=resource.images.weatherfanart)</onclick>
+					<onclick condition="System.AddonIsEnabled(script.image.resource.select)">RunScript(script.image.resource.select,property=WeatherFanart&amp;type=resource.images.weatherfanart)</onclick>
+					<onclick condition="System.HasAddon(script.image.resource.select) + !System.AddonIsEnabled(script.image.resource.select)">EnableAddon(script.image.resource.select)</onclick>
 					<onclick condition="!System.HasAddon(script.image.resource.select)">InstallAddon(script.image.resource.select)</onclick>
 					<enable>!Skin.HasSetting(no_fanart)</enable>
 				</control>
@@ -700,8 +704,9 @@
 					<label>$LOCALIZE[31149]</label>
 					<label2>$INFO[Skin.String(MovieGenreFanart.Name)]</label2>
 					<include>DefaultSettingButton</include>
+					<onclick condition="System.AddonIsEnabled(script.image.resource.select)">RunScript(script.image.resource.select,property=MovieGenreFanart&amp;type=resource.images.moviegenrefanart)</onclick>
+					<onclick condition="System.HasAddon(script.image.resource.select) + !System.AddonIsEnabled(script.image.resource.select)">EnableAddon(script.image.resource.select)</onclick>
 					<onclick condition="!System.HasAddon(script.image.resource.select)">InstallAddon(script.image.resource.select)</onclick>
-					<onclick condition="System.HasAddon(script.image.resource.select)">RunScript(script.image.resource.select,property=MovieGenreFanart&amp;type=resource.images.moviegenrefanart)</onclick>
 				</control>
 			</control>
 			<control type="image">
