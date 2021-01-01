@@ -2,6 +2,9 @@
 # Addon Name: Estuary
 # Addon id: skin.estuary
 # Addon Provider: phil65, Ichabod Fletchman
+# Addon Name: Estuary
+# Addon id: skin.estuary
+# Addon Provider: phil65, Ichabod Fletchman
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Main\n"
@@ -861,11 +864,12 @@ msgid "80%"
 msgstr ""
 
 #: /xml/SkinSettings.xml
-msgctxt "#31521"
-msgid "90%"
+msgctxt "#31168"
+msgid "Show posters instead of thumbs for musicvideos"
 msgstr ""
 
-#: /xml/SkinSettings.xml
-msgctxt "#31522"
-msgid "Choose weather icon pack"
+#. Description label for skin settings area
+#: /xml/Variables.xml
+msgctxt "#31169"
+msgid "Artwork related settings."
 msgstr ""

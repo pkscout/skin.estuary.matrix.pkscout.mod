@@ -466,7 +466,7 @@
 		<param name="show_studios" />
 		<param name="list_id" />
 		<definition>
-			<include content="WidgetListEpisodes" condition="$PARAM[show_recent]">
+			<include content="WidgetListEpisodes" condition="$PARAM[show_recent] + !Skin.HasSetting(show_musicvideoposter)">
 				<param name="content_path" value="videodb://recentlyaddedmusicvideos/"/>
 				<param name="widget_header" value="$LOCALIZE[20390]"/>
 				<param name="widget_target" value="videos"/>
@@ -476,13 +476,27 @@
 				<param name="fallback_image" value="DefaultMusicSongs.png" />
 				<param name="list_id" value="$PARAM[list_id]"/>
 			</include>
-			<include content="WidgetListEpisodes" condition="$PARAM[show_unwatched]">
+			<include content="WidgetListPoster" condition="$PARAM[show_recent] + Skin.HasSetting(show_musicvideoposter)">
+				<param name="content_path" value="videodb://recentlyaddedmusicvideos/"/>
+				<param name="widget_header" value="$LOCALIZE[20390]"/>
+				<param name="widget_target" value="videos"/>
+				<param name="fallback_image" value="DefaultMusicSongs.png" />
+				<param name="list_id" value="$PARAM[list_id]"/>
+			</include>
+			<include content="WidgetListEpisodes" condition="$PARAM[show_unwatched] + !Skin.HasSetting(show_musicvideoposter)">
 				<param name="content_path" value="special://skin/playlists/unwatched_musicvideos.xsp"/>
 				<param name="widget_header" value="$LOCALIZE[31151]"/>
 				<param name="widget_target" value="videos"/>
 				<param name="main_label" value="$INFO[ListItem.Label]" />
 				<param name="sub_label" value="$INFO[ListItem.Artist]" />
 				<param name="thumb_label" value="$INFO[ListItem.Year]" />
+				<param name="fallback_image" value="DefaultMusicSongs.png" />
+				<param name="list_id" value="$PARAM[list_id]"/>
+			</include>
+			<include content="WidgetListPoster" condition="$PARAM[show_unwatched] + Skin.HasSetting(show_musicvideoposter)">
+				<param name="content_path" value="special://skin/playlists/unwatched_musicvideos.xsp"/>
+				<param name="widget_header" value="$LOCALIZE[31151]"/>
+				<param name="widget_target" value="videos"/>
 				<param name="fallback_image" value="DefaultMusicSongs.png" />
 				<param name="list_id" value="$PARAM[list_id]"/>
 			</include>
@@ -493,13 +507,20 @@
 				<param name="widget_limit" value="10"/>
 				<param name="list_id" value="$PARAM[list_id]"/>
 			</include>
-			<include content="WidgetListEpisodes" condition="$PARAM[show_randomvideos]">
+			<include content="WidgetListEpisodes" condition="$PARAM[show_randomvideos]  + !Skin.HasSetting(show_musicvideoposter)">
 				<param name="content_path" value="special://skin/playlists/random_musicvideos.xsp"/>
 				<param name="widget_header" value="$LOCALIZE[31152]"/>
 				<param name="widget_target" value="videos"/>
 				<param name="main_label" value="$INFO[ListItem.Label]" />
 				<param name="sub_label" value="$INFO[ListItem.Artist]" />
 				<param name="thumb_label" value="$INFO[ListItem.Year]" />
+				<param name="fallback_image" value="DefaultMusicSongs.png" />
+				<param name="list_id" value="$PARAM[list_id]"/>
+			</include>
+			<include content="WidgetListPoster" condition="$PARAM[show_randomvideos] + Skin.HasSetting(show_musicvideoposter)">
+				<param name="content_path" value="special://skin/playlists/random_musicvideos.xsp"/>
+				<param name="widget_header" value="$LOCALIZE[31152]"/>
+				<param name="widget_target" value="videos"/>
 				<param name="fallback_image" value="DefaultMusicSongs.png" />
 				<param name="list_id" value="$PARAM[list_id]"/>
 			</include>
