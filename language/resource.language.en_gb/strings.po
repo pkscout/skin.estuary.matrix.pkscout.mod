@@ -803,7 +803,12 @@ msgctxt "#31505"
 msgid "Background diffusion"
 msgstr ""
 
-#empty strings from id 31506 to 31509
+#: /xml/SkinSettings.xml
+msgctxt "#31506"
+msgid "Display seek bar at bottom of screen"
+msgstr ""
+
+#empty strings from id 31507 to 31509
 
 #: /xml/SkinSettings.xml
 msgctxt "#31510"

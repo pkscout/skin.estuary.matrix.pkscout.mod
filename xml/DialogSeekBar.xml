@@ -10,7 +10,7 @@
 		<include>PVRChannelNumberInput</include>
 		<control type="group">
 			<animation effect="slide" start="0,200" end="0,0" time="300" tween="cubic" easing="out">VisibleChange</animation>
-			<visible>Player.ShowInfo | Window.IsActive(fullscreeninfo) | Player.ShowTime | Window.IsActive(videoosd) | Window.IsActive(musicosd) | Window.IsActive(playerprocessinfo) | !String.IsEmpty(PVR.ChannelNumberInput) | Window.IsActive(pvrosdchannels) | Window.IsActive(pvrchannelguide) | ![!String.IsEmpty(Player.SeekNumeric) | Player.Seeking | Player.DisplayAfterSeek | Player.Forwarding | Player.Rewinding | Player.Paused]</visible>
+			<visible>Skin.HasSetting(show_seekbar_at_bottom) | Player.ShowInfo | Window.IsActive(fullscreeninfo) | Player.ShowTime | Window.IsActive(videoosd) | Window.IsActive(musicosd) | Window.IsActive(playerprocessinfo) | !String.IsEmpty(PVR.ChannelNumberInput) | Window.IsActive(pvrosdchannels) | Window.IsActive(pvrchannelguide) | ![!String.IsEmpty(Player.SeekNumeric) | Player.Seeking | Player.DisplayAfterSeek | Player.Forwarding | Player.Rewinding | Player.Paused]</visible>
 			<visible>!Player.HasGame</visible>
 			<bottom>0</bottom>
 			<height>190</height>
@@ -270,12 +270,12 @@
 			<height>380</height>
 			<control type="label">
 				<left>20</left>
-				<width>220</width>
+				<width>300</width>
 				<top>-80</top>
 				<height>25</height>
 				<label>$INFO[VideoPlayer.ChannelNumberLabel]</label>
 				<shadowcolor>black</shadowcolor>
-				<align>center</align>
+				<align>left</align>
 				<font>WeatherTemp</font>
 				<aligny>center</aligny>
 			</control>
