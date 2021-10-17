@@ -621,6 +621,13 @@
 				<param name="label" value="$INFO[ListItem.ChannelName]"/>
 				<param name="label2" value="$INFO[ListItem.Title]$INFO[ListItem.EpisodeName, (,)]"/>
 			</include>
+			<include content="WidgetListChannels" condition="$PARAM[show_channelgroups]">
+				<param name="content_path" value="pvr://channels/tv"/>
+				<param name="widget_header" value="$LOCALIZE[19173]"/>
+				<param name="widget_target" value="tvguide"/>
+				<param name="list_id" value="$PARAM[list_id]"/>
+				<param name="item_treshold" value="1"/>
+			</include>
 		</definition>
 	</include>
 	<include name="RadioSubMenuItem">
@@ -702,6 +709,7 @@
 		<onload condition="!$EXP[HasMusicVideoSlot5]">Skin.SetBool(mvslot5_show_studios)</onload>	
 		<onload condition="!$EXP[HasTVSlot1]">Skin.SetBool(tvslot1_show_channels)</onload>	
 		<onload condition="!$EXP[HasTVSlot2]">Skin.SetBool(tvslot2_show_recordings)</onload>
+		<onload condition="!$EXP[HasTVSlot3]">Skin.SetBool(tvslot3_show_channelgroup)</onload>
 		<onload condition="!$EXP[HasRadioSlot1]">Skin.SetBool(radioslot1_show_channels)</onload>	
 		<onload condition="!$EXP[HasRadioSlot2]">Skin.SetBool(radioslot2_show_recordings)</onload>
 		<onload condition="!$EXP[HasAddonSlot1]">Skin.SetBool(addonslot1_show_video)</onload>	
@@ -711,6 +719,6 @@
 		<onload condition="!$EXP[HasAddonSlot5] + System.Platform.Android">Skin.SetBool(addonslot5_show_android)</onload>	
 		<onload condition="!$EXP[HasAddonSlot5] + !System.Platform.Android">Skin.SetBool(addonslot5_show_none)</onload>	
 		<onload condition="!$EXP[HasAddonSlot6]">Skin.SetBool(addonslot6_show_pictures)</onload>
-		<onload>Skin.SetString(skin_version,1.0.1)</onload>
+		<onload>Skin.SetString(skin_version,1.0.8)</onload>
 	</include>
 </includes>

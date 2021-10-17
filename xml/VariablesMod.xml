@@ -554,12 +554,23 @@
 	</variable>
 	<variable name="TVSubMenuSlot1Label2Var">
 		<value condition="Skin.HasSetting(tvslot1_show_recordings)">$LOCALIZE[31015]</value>
+		<value condition="Skin.HasSetting(tvslot1_show_channels)">$LOCALIZE[31016]</value>
+		<value condition="Skin.HasSetting(tvslot1_show_channelgroups)">$LOCALIZE[19173]</value>
 		<value condition="Skin.HasSetting(tvslot1_show_none)">$LOCALIZE[351]</value>
 		<value>$LOCALIZE[31016]</value>
 	</variable>
 	<variable name="TVSubMenuSlot2Label2Var">
+		<value condition="Skin.HasSetting(tvslot2_show_recordings)">$LOCALIZE[31015]</value>
 		<value condition="Skin.HasSetting(tvslot2_show_channels)">$LOCALIZE[31016]</value>
+		<value condition="Skin.HasSetting(tvslot2_show_channelgroups)">$LOCALIZE[19173]</value>
 		<value condition="Skin.HasSetting(tvslot2_show_none)">$LOCALIZE[351]</value>
+		<value>$LOCALIZE[31015]</value>
+	</variable>
+	<variable name="TVSubMenuSlot3Label2Var">
+		<value condition="Skin.HasSetting(tvslot3_show_recordings)">$LOCALIZE[31015]</value>
+		<value condition="Skin.HasSetting(tvslot3_show_channels)">$LOCALIZE[31016]</value>
+		<value condition="Skin.HasSetting(tvslot3_show_channelgroups)">$LOCALIZE[19173]</value>
+		<value condition="Skin.HasSetting(tvslot3_show_none)">$LOCALIZE[351]</value>
 		<value>$LOCALIZE[31015]</value>
 	</variable>
 	<variable name="RadioSubMenuSlot1Label2Var">
@@ -573,6 +584,7 @@
 		<value>$LOCALIZE[31015]</value>
 	</variable>
 	<variable name="AddonSubMenuSlot1Label2Var">
+		<value condition="Skin.HasSetting(addonslot1_show_video)">$LOCALIZE[1037]</value>
 		<value condition="Skin.HasSetting(addonslot1_show_music)">$LOCALIZE[1038]</value>
 		<value condition="Skin.HasSetting(addonslot1_show_games)">$LOCALIZE[35049]</value>
 		<value condition="Skin.HasSetting(addonslot1_show_programs)">$LOCALIZE[1043]</value>
@@ -583,6 +595,7 @@
 	</variable>
 	<variable name="AddonSubMenuSlot2Label2Var">
 		<value condition="Skin.HasSetting(addonslot2_show_video)">$LOCALIZE[1037]</value>
+		<value condition="Skin.HasSetting(addonslot2_show_music)">$LOCALIZE[1038]</value>
 		<value condition="Skin.HasSetting(addonslot2_show_games)">$LOCALIZE[35049]</value>
 		<value condition="Skin.HasSetting(addonslot2_show_programs)">$LOCALIZE[1043]</value>
 		<value condition="Skin.HasSetting(addonslot2_show_android)">$LOCALIZE[20244]</value>
@@ -779,10 +792,13 @@
 		Skin.HasSetting(mvslot5_show_recent) | Skin.HasSetting(mvslot5_show_unwatched) | Skin.HasSetting(mvslot5_show_randomartists) | Skin.HasSetting(mvslot5_show_randomvideos) | Skin.HasSetting(mvslot5_show_studios) | Skin.HasSetting(mvslot5_show_none)
 	</expression>	
 	<expression name="HasTVSlot1">
-		Skin.HasSetting(tvslot1_show_channels) | Skin.HasSetting(tvslot1_show_recordings) | Skin.HasSetting(tvslot1_show_none)
+		Skin.HasSetting(tvslot1_show_channels) | Skin.HasSetting(tvslot1_show_recordings) | Skin.HasSetting(tvslot1_show_channelgroups) | Skin.HasSetting(tvslot1_show_none)
 	</expression>	
 	<expression name="HasTVSlot2">
-		Skin.HasSetting(tvslot2_show_channels) | Skin.HasSetting(tvslot2_show_recordings) | Skin.HasSetting(tvslot2_show_none)
+		Skin.HasSetting(tvslot2_show_channels) | Skin.HasSetting(tvslot2_show_recordings) | Skin.HasSetting(tvslot2_show_channelgroups) | Skin.HasSetting(tvslot2_show_none)
+	</expression>
+	<expression name="HasTVSlot3">
+		Skin.HasSetting(tvslot3_show_channels) | Skin.HasSetting(tvslot2_show_recordings) | Skin.HasSetting(tvslot3_show_channelgroups) | Skin.HasSetting(tvslot3_show_none)
 	</expression>
 	<expression name="HasRadioSlot1">
 		Skin.HasSetting(radioslot1_show_channels) | Skin.HasSetting(radioslot1_show_recordings) | Skin.HasSetting(radioslot1_show_none)
