@@ -571,7 +571,7 @@
 		<value condition="Skin.HasSetting(tvslot3_show_channels)">$LOCALIZE[31016]</value>
 		<value condition="Skin.HasSetting(tvslot3_show_channelgroups)">$LOCALIZE[19173]</value>
 		<value condition="Skin.HasSetting(tvslot3_show_none)">$LOCALIZE[351]</value>
-		<value>$LOCALIZE[31015]</value>
+		<value>$LOCALIZE[19173]</value>
 	</variable>
 	<variable name="RadioSubMenuSlot1Label2Var">
 		<value condition="Skin.HasSetting(radioslot1_show_recordings)">$LOCALIZE[31015]</value>
