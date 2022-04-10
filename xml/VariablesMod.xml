@@ -798,7 +798,7 @@
 		Skin.HasSetting(tvslot2_show_channels) | Skin.HasSetting(tvslot2_show_recordings) | Skin.HasSetting(tvslot2_show_channelgroups) | Skin.HasSetting(tvslot2_show_none)
 	</expression>
 	<expression name="HasTVSlot3">
-		Skin.HasSetting(tvslot3_show_channels) | Skin.HasSetting(tvslot2_show_recordings) | Skin.HasSetting(tvslot3_show_channelgroups) | Skin.HasSetting(tvslot3_show_none)
+		Skin.HasSetting(tvslot3_show_channels) | Skin.HasSetting(tvslot3_show_recordings) | Skin.HasSetting(tvslot3_show_channelgroups) | Skin.HasSetting(tvslot3_show_none)
 	</expression>
 	<expression name="HasRadioSlot1">
 		Skin.HasSetting(radioslot1_show_channels) | Skin.HasSetting(radioslot1_show_recordings) | Skin.HasSetting(radioslot1_show_none)

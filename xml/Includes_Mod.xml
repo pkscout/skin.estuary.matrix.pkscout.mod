@@ -719,7 +719,7 @@
 		<onload condition="!$EXP[HasAddonSlot5] + System.Platform.Android">Skin.SetBool(addonslot5_show_android)</onload>	
 		<onload condition="!$EXP[HasAddonSlot5] + !System.Platform.Android">Skin.SetBool(addonslot5_show_none)</onload>	
 		<onload condition="!$EXP[HasAddonSlot6]">Skin.SetBool(addonslot6_show_pictures)</onload>
-		<onload>Skin.SetString(skin_version,1.0.10)</onload>
+		<onload>Skin.SetString(skin_version,1.0.13)</onload>
 	</include>
 	<include name="ModFonts">
 			<!-- Normal Fonts -->
