@@ -897,3 +897,8 @@ msgstr ""
 msgctxt "#31200"
 msgid "Roboto Condensed"
 msgstr ""
+
+#: /xml/Font.xml
+msgctxt "#31201"
+msgid "Roboto Flex"
+msgstr ""
