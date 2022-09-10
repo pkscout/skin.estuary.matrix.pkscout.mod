@@ -820,7 +820,12 @@ msgctxt "#31506"
 msgid "Display seek bar at bottom of screen"
 msgstr ""
 
-#empty strings from id 31507 to 31509
+#empty strings from id 31507 to 31508
+
+#: /xml/SkinSettings.xml
+msgctxt "#31509"
+msgid "Random TV Shows"
+msgstr ""
 
 #: /xml/SkinSettings.xml
 msgctxt "#31510"
