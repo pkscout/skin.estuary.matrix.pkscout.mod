@@ -408,7 +408,7 @@
 		<value condition="Skin.HasSetting(tvshowslot1_show_inprogunwatched)">$LOCALIZE[31122] / $LOCALIZE[626]</value>
 		<value condition="Skin.HasSetting(tvshowslot1_show_random)">$LOCALIZE[31509]</value>
 		<value condition="Skin.HasSetting(tvshowslot1_show_genres)">$LOCALIZE[135]</value>
-		<value condition="Skin.HasSetting(tvshowslot1_show_studio)">$LOCALIZE[20388]</value>
+		<value condition="Skin.HasSetting(tvshowslot1_show_studios)">$LOCALIZE[20388]</value>
 		<value condition="Skin.HasSetting(tvshowslot1_show_videoaddons)">$LOCALIZE[1037]</value>
 		<value condition="Skin.HasSetting(tvshowslot1_show_none)">$LOCALIZE[351]</value>
 		<value>$LOCALIZE[626]</value>
@@ -419,7 +419,7 @@
 		<value condition="Skin.HasSetting(tvshowslot2_show_inprogunwatched)">$LOCALIZE[31122] / $LOCALIZE[626]</value>
 		<value condition="Skin.HasSetting(tvshowslot2_show_random)">$LOCALIZE[31509]</value>
 		<value condition="Skin.HasSetting(tvshowslot2_show_genres)">$LOCALIZE[135]</value>
-		<value condition="Skin.HasSetting(tvshowslot2_show_studio)">$LOCALIZE[20388]</value>
+		<value condition="Skin.HasSetting(tvshowslot2_show_studios)">$LOCALIZE[20388]</value>
 		<value condition="Skin.HasSetting(tvshowslot2_show_videoaddons)">$LOCALIZE[1037]</value>
 		<value condition="Skin.HasSetting(tvshowslot2_show_none)">$LOCALIZE[351]</value>
 		<value>$LOCALIZE[20387]</value>
@@ -430,7 +430,7 @@
 		<value condition="Skin.HasSetting(tvshowslot3_show_inprogunwatched)">$LOCALIZE[31122] / $LOCALIZE[626]</value>
 		<value condition="Skin.HasSetting(tvshowslot3_show_random)">$LOCALIZE[31509]</value>
 		<value condition="Skin.HasSetting(tvshowslot3_show_genres)">$LOCALIZE[135]</value>
-		<value condition="Skin.HasSetting(tvshowslot3_show_studio)">$LOCALIZE[20388]</value>
+		<value condition="Skin.HasSetting(tvshowslot3_show_studios)">$LOCALIZE[20388]</value>
 		<value condition="Skin.HasSetting(tvshowslot3_show_videoaddons)">$LOCALIZE[1037]</value>
 		<value condition="Skin.HasSetting(tvshowslot3_show_none)">$LOCALIZE[351]</value>
 		<value>$LOCALIZE[31122]</value>
@@ -442,7 +442,7 @@
 		<value condition="Skin.HasSetting(tvshowslot4_show_inprogunwatched)">$LOCALIZE[31122] / $LOCALIZE[626]</value>
 		<value condition="Skin.HasSetting(tvshowslot4_show_random)">$LOCALIZE[31509]</value>
 		<value condition="Skin.HasSetting(tvshowslot4_show_genres)">$LOCALIZE[135]</value>
-		<value condition="Skin.HasSetting(tvshowslot4_show_studio)">$LOCALIZE[20388]</value>
+		<value condition="Skin.HasSetting(tvshowslot4_show_studios)">$LOCALIZE[20388]</value>
 		<value condition="Skin.HasSetting(tvshowslot4_show_videoaddons)">$LOCALIZE[1037]</value>
 		<value condition="Skin.HasSetting(tvshowslot4_show_none)">$LOCALIZE[351]</value>
 		<value>$LOCALIZE[135]</value>
@@ -454,7 +454,7 @@
 		<value condition="Skin.HasSetting(tvshowslot5_show_inprogunwatched)">$LOCALIZE[31122] / $LOCALIZE[626]</value>
 		<value condition="Skin.HasSetting(tvshowslot4_show_random)">$LOCALIZE[31509]</value>
 		<value condition="Skin.HasSetting(tvshowslot5_show_genres)">$LOCALIZE[135]</value>
-		<value condition="Skin.HasSetting(tvshowslot5_show_studio)">$LOCALIZE[20388]</value>
+		<value condition="Skin.HasSetting(tvshowslot5_show_studios)">$LOCALIZE[20388]</value>
 		<value condition="Skin.HasSetting(tvshowslot5_show_videoaddons)">$LOCALIZE[1037]</value>
 		<value condition="Skin.HasSetting(tvshowslot5_show_none)">$LOCALIZE[351]</value>
 		<value>$LOCALIZE[20388]</value>
